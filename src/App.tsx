@@ -1,4 +1,4 @@
-// QuickNote Web App - 40% Complete (React + Tailwind + TypeScript + shadcn/ui)
+
 
 import React, { useState, useEffect } from 'react';
 import { Input } from "@/components/ui/input";
@@ -55,15 +55,11 @@ const App: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto p-4 space-y-4">
       <h1 className="text-2xl font-bold">QuickNote</h1>
-
-      {/* Search Bar */}
       <Input
         placeholder="Search notes by title..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-
-      {/* Add Note Form */}
       <div className="space-y-2">
         <Input
           placeholder="Note Title"
@@ -77,8 +73,6 @@ const App: React.FC = () => {
         />
         <Button onClick={handleAddNote}>Add Note</Button>
       </div>
-
-      {/* Notes List */}
       <div className="grid gap-4 md:grid-cols-2">
         {filteredNotes.map(note => (
           <Card key={note.id}>
