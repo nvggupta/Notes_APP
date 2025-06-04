@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SearchBar from "@/components/SearchBar";
 import NoteEditor from "@/components/NoteEditor";
 import NoteCard from "@/components/NoteCard";

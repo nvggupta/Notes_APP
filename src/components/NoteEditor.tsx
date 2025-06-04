@@ -15,7 +15,7 @@ export interface Note {
 interface NoteEditorProps {
   note: Partial<Note>;
   onChange: (note: Partial<Note>) => void;
-  onSave: () => void;
+  onSave: (note?: Partial<Note>) => void;
 }
 
 const NoteEditor =  ({ note, onChange, onSave }: NoteEditorProps) => {
